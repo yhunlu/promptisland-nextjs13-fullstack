@@ -1,3 +1,4 @@
+import Feed from "@components/Feed"
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       <p className="text-center font-bold">
         #SharingCaring
       </p>
-      {/* Feed */}
+      <Feed />
     </section>
   )
 }
