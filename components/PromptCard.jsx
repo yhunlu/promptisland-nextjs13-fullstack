@@ -1,5 +1,8 @@
-import React from 'react'
+'use client'
 
+import { useState } from "react"
+
+useSession
 const PromptCard = () => {
   return (
     <div>PromptCard</div>
