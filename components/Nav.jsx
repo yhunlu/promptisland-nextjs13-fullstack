@@ -25,13 +25,12 @@ const Nav = () => {
     <nav className="flex-between w-full mb-16 pt-3">
       <Link href="/" className="flex gap-2 flex-center">
         <Image
-          src="/assets/images/logo.svg"
+          src="/assets/images/promptisland-high-resolution-logo-color-on-transparent-background.svg"
           alt="PromptIsland Logo"
-          width={30}
+          width={100}
           height={30}
           className="object-contain"
         />
-        <p className="logo_text">PromptIsland</p>
       </Link>
 
       {/* Desktop Nav */}
@@ -49,7 +48,7 @@ const Nav = () => {
             <Link href="/profile">
               <Image
                 src={session?.user.image}
-                width={37}
+                width={50}
                 height={37}
                 className="rounded-full"
                 alt="profile"
@@ -79,7 +78,7 @@ const Nav = () => {
           <div className="flex">
             <Image
               src={session?.user.image}
-              width={37}
+              width={50}
               height={37}
               className="rounded-full"
               alt="profile"
