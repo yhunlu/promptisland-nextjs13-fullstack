@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import React from 'react';
+
 
 const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
+
   return (
     <section className="w-full max-w-full flex-start flex-col">
       <h1 className="head_text text-left">
@@ -15,6 +16,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         onSubmit={handleSubmit}
         className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism"
       >
+        {/* Prompt */}
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
             Your AI Prompt
@@ -28,18 +30,19 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             className="form_textarea"
           />
         </label>
+        {/* Tag */}
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
             Tag {` `}
             <span className="font-normal">
-              (#stablediffusin, #programming, #webdevelopment, #dev, #idea)
+              (stablediffusin, programming, webdevelopment, dev, idea)
             </span>
           </span>
 
           <input
             value={post.tag}
             onChange={(e) => setPost({ ...post, tag: e.target.value })}
-            placeholder="#tag"
+            placeholder="tag"
             required
             className="form_input"
           />

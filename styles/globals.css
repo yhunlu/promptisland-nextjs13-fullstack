@@ -93,8 +93,16 @@
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
 
+.orange_gradient_outline {
+  @apply rounded-full border border-orange-900 bg-transparent py-1.5 px-5 text-orange-600 transition-all hover:bg-orange-900 hover:text-white text-center text-sm font-inter flex items-center justify-center;
+}
+
 .green_gradient {
   @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+}
+
+.green_gradient_outline {
+  @apply rounded-full border border-green-900 bg-transparent py-1.5 px-5 text-green-600 transition-all hover:bg-green-900 hover:text-white text-center text-sm font-inter flex items-center justify-center;
 }
 
 .yellow_gradient {
